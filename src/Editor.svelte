@@ -4,7 +4,7 @@
     import autosize from 'autosize';
 
     export let lines = false;
-    export let language = 'jsx';
+    export let language = 'javascript';
     export let langSelector = false;
     export let dots = false;
     export let lineSelector = false;

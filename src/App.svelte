@@ -1,9 +1,8 @@
 <script lang="ts">
-  import svelteLogo from './assets/svelte.svg'
-  import viteLogo from '/vite.svg'
-  import Counter from './lib/Editor.svelte'
-  import 'highlight.js/styles/github-dark.css';
-  import Editor from './lib/Editor.svelte';
+  import 'highlight.js/styles/tokyo-night-dark.css';
+  import Editor from './Editor.svelte';
+
+  let code = "console.log('Hello, World!');"
 </script>
 
 <svelte:head>
@@ -15,7 +14,7 @@
 <main>
 
   <div class="w-screen h-screen overflow-hidden">
-    <Editor dots lines class="bg-gray-900 text-white" maxHeight="100vh" caretColor="#FFFFFF" lineNumberClass="border-gray-800 text-gray-400"/>
+    <Editor dots bind:value={code} lines class="bg-gray-900 text-white" maxHeight="100vh" caretColor="#FFFFFF" lineNumberClass="border-gray-800 text-gray-400"/>
   </div>
 
 </main>
