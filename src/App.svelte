@@ -15,7 +15,7 @@
 <main>
 
   <div class="w-screen h-screen overflow-hidden">
-    <Editor dots lines class="bg-gray-900 w-1/2 text-white" maxHeight="100vh" caretColor="#FFFFFF" lineNumberClass="border-gray-800 text-gray-400"/>
+    <Editor dots lines class="bg-gray-900 text-white" maxHeight="100vh" caretColor="#FFFFFF" lineNumberClass="border-gray-800 text-gray-400"/>
   </div>
 
 </main>

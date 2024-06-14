@@ -127,7 +127,7 @@
         </div>
     </div>
     <div class="flex flex-row mt-4">
-        <div id="lines" class="{lines? 'w-6' : 'w-0'} hide-scrollbar overflow-y-scroll" style="max-height: calc({maxHeight} - 96px);">
+        <div id="lines" class="{lines? 'w-6' : 'w-0'} hide-scrollbar bg-gray-800 overflow-y-hidden" style="max-height: calc({maxHeight} - 96px);">
             {#each {length:  value.split(/\r\n|\r|\n/).length} as _, i}
                 <div class="text-gray-400 h-5 pt-0.5 flex items-end relative justify-center px-1 text-sm border-r border-gray-300 {lineNumberClass}">
                     {i + 1}
