@@ -2,7 +2,7 @@
   import svelteLogo from './assets/svelte.svg'
   import viteLogo from '/vite.svg'
   import Counter from './lib/Editor.svelte'
-  import 'highlight.js/styles/github.css';
+  import 'highlight.js/styles/atom-one-light.css';
 </script>
 
 <svelte:head>
