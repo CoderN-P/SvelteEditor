@@ -2,7 +2,8 @@
   import svelteLogo from './assets/svelte.svg'
   import viteLogo from '/vite.svg'
   import Counter from './lib/Editor.svelte'
-  import 'highlight.js/styles/atom-one-light.css';
+  import 'highlight.js/styles/github-dark.css';
+  import Editor from './lib/Editor.svelte';
 </script>
 
 <svelte:head>
@@ -13,26 +14,9 @@
 
 <main>
 
-  <div class="card">
-    <Counter lines class="bg-gray-600"/>
+  <div class="w-screen h-screen overflow-hidden">
+    <Editor dots lines class="bg-gray-900 w-1/2 text-white" maxHeight="100vh" caretColor="#FFFFFF" lineNumberClass="border-gray-800 text-gray-400"/>
   </div>
 
 </main>
 
-<style>
-  .logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
-  }
-  .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-  }
-  .logo.svelte:hover {
-    filter: drop-shadow(0 0 2em #ff3e00aa);
-  }
-  .read-the-docs {
-    color: #888;
-  }
-</style>

@@ -1,6 +1,5 @@
 {
-  "name": "svelte-editor",
-  "private": true,
+  "name": "editor-for-svelte",
   "version": "0.0.0",
   "type": "module",
   "author": {
@@ -34,6 +33,7 @@
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^3.0.2",
     "@tsconfig/svelte": "^5.0.2",
+    "@types/autosize": "^4.0.3",
     "autoprefixer": "^10.4.19",
     "highlight.js": "^11.9.0",
     "postcss": "^8.4.38",
@@ -43,5 +43,9 @@
     "tslib": "^2.6.2",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "autosize": "^6.0.1",
+    "editor-for-svelte": "^0.0.0"
   }
 }
