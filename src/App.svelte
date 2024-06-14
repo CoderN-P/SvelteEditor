@@ -1,21 +1,13 @@
 <script lang="ts">
-  import 'highlight.js/styles/tokyo-night-dark.css';
+  import 'highlight.js/styles/github-dark.css';
   import Editor from './Editor.svelte';
 
-  let code = "console.log('Hello, World!');"
+  let code = `def hello_world():\n\tprint('Hello, World!')`;
 </script>
 
-<svelte:head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-</svelte:head>
-
 <main>
-
-  <div class="w-screen h-screen overflow-hidden">
-    <Editor dots bind:value={code} lines class="bg-gray-900 text-white" maxHeight="100vh" caretColor="#FFFFFF" lineNumberClass="border-gray-800 text-gray-400"/>
+  <div class="w-screen h-screen">
+    <Editor class="bg-gray-900 text-white w-1/2" bind:value={code} caretColor="#FFFFFF" lines language="python" lineNumberClass="bg-gray-800 rounded-md !border-0"/>
   </div>
-
 </main>
 

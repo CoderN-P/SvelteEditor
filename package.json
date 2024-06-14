@@ -45,6 +45,7 @@
     "vite": "^5.2.0"
   },
   "dependencies": {
-    "autosize": "^6.0.1"
+    "autosize": "^6.0.1",
+    "editor-for-svelte": "^1.0.4"
   }
 }
