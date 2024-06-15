@@ -5,3 +5,12 @@
 html {
     font-family: "Source Code Pro", monospace;
 }
+
+.card {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    @apply shadow-xl !important;
+}
+

@@ -1,6 +1,6 @@
 {
   "name": "editor-for-svelte",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "type": "module",
   "author": {
     "name": "Neel Parpia",
@@ -10,6 +10,8 @@
   "description": "A simple code editor built with Svelte",
   "bugs": "https://github.com/CoderN-P/SvelteEditor/issues",
   "main": "index.js",
+  "module": "index.js",
+  "svelte": "index.js",
   "homepage": "https://github.com/CoderN-P/SvelteEditor",
   "keywords": [
     "svelte",

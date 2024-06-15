@@ -1,6 +1,7 @@
 <script lang="ts">
-    import hljs from 'highlight.js';
+    import {default as hljsMain} from 'highlight.js';
     import 'highlight.js/styles/default.css';
+
     import autosize from 'autosize';
 
     export let lines = false;
@@ -14,8 +15,9 @@
     export let defaultTextClass = "text-gray-400 text-sm ml-2";
     export let maxHeight = "100vh";
     export let defaultText = "Start typing or paste some code to see syntax highlighting!";
-
     export let minHeight = "80px";
+    export let hljs = hljsMain;
+
 
     let highlightedText = "";
 
