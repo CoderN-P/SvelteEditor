@@ -1,6 +1,6 @@
 {
   "name": "editor-for-svelte",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "type": "module",
   "author": {
     "name": "Neel Parpia",
@@ -45,7 +45,6 @@
     "vite": "^5.2.0"
   },
   "dependencies": {
-    "autosize": "^6.0.1",
-    "editor-for-svelte": "^1.0.4"
+    "autosize": "^6.0.1"
   }
 }
