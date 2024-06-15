@@ -15,6 +15,7 @@ src/tailwind.css
 src/vite-env.d.ts
 src/assets
 src/app.d.ts
+src/app.css
 public
 .vscode
 .idea

@@ -85,9 +85,6 @@
         align-items: center;
         font-size: 0.875rem/* 14px */!important;
         line-height: 1.25rem/* 20px */!important;
-    }
-
-    pre {
         font-family: "Source Code Pro", monospace !important;
     }
 
@@ -102,7 +99,7 @@
     .hide-scrollbar::-webkit-scrollbar {
         display: none; /* For Chrome, Safari, and Opera */
     }
-    pre::after {
+    .editor::after {
         content: "\A";
         white-space: pre;
     }
