@@ -114,7 +114,7 @@
 </svelte:head>
 
 
-<div class="rounded-xl shadow-xl m-4 flex flex-col bg-gray-100 p-4 {$$props.class}" style="max-height: calc({maxHeight} - 32px); min-height: {minHeight}">
+<div id={$$props.id || "svelte-editor"} class="rounded-xl shadow-xl m-4 flex flex-col bg-gray-100 p-4 {$$props.class}" style="max-height: calc({maxHeight} - 32px); min-height: {minHeight}">
     <div class="flex flex-row justify-between w-full">
         {#if dots}
             <div class="flex gap-2 z-50 flex-row">
