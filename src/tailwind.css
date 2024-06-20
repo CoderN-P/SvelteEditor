@@ -670,12 +670,33 @@ video {
   height: 3rem;
 }
 
+.h-min {
+  height: -moz-min-content;
+  height: min-content;
+}
+
+.h-\[110\%\] {
+  height: 110%;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
 .max-h-full {
   max-height: 100%;
 }
 
+.max-h-24 {
+  max-height: 6rem;
+}
+
 .min-h-12 {
   min-height: 3rem;
+}
+
+.min-h-24 {
+  min-height: 6rem;
 }
 
 .w-0 {
@@ -720,6 +741,10 @@ video {
 
 .flex-1 {
   flex: 1 1 0%;
+}
+
+.grow {
+  flex-grow: 1;
 }
 
 .cursor-pointer {
