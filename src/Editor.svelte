@@ -16,6 +16,8 @@
     export let maxHeight = "100vh";
     export let defaultText = "Start typing or paste some code to see syntax highlighting!";
     export let minHeight = "80px";
+    export let langSelectorClass = "";
+    export let lineSelectorClass = "";
     export let hljs = hljsMain;
 
 
@@ -125,10 +127,10 @@
         {/if}
         <div class="flex flex-row flex-1 justify-end gap-2">
             {#if lineSelector}
-                <button class="bg-gray-200 hover:bg-gray-300 rounded-md px-2 py-1 text-sm" on:click={() => lines = !lines}>enable line numbers</button>
+                <button class="bg-gray-200 hover:bg-gray-300 rounded-md px-2 py-1 text-sm {lineSelectorClass}" on:click={() => lines = !lines}>enable line numbers</button>
             {/if}
             {#if langSelector}
-                <select class="bg-gray-200 hover:bg-gray-300 rounded-md px-2 py-1 text-sm" bind:value={language}>
+                <select class="bg-gray-200 hover:bg-gray-300 rounded-md px-2 py-1 text-sm {langSelectorClass}" bind:value={language}>
                     <option value="typescript">TypeScript</option>
                     <option value="javascript">JavaScript</option>
                     <option value="html">HTML</option>
@@ -142,6 +144,28 @@
                     <option value="yaml">YAML</option>
                     <option value="dockerfile">Dockerfile</option>
                     <option value="plaintext">Plain Text</option>
+                    <option value="c">C</option>
+                    <option value="cpp">C++</option>
+                    <option value="csharp">C#</option>
+                    <option value="java">Java</option>
+                    <option value="kotlin">Kotlin</option>
+                    <option value="swift">Swift</option>
+                    <option value="php">PHP</option>
+                    <option value="python">Python</option>
+                    <option value="ruby">Ruby</option>
+                    <option value="rust">Rust</option>
+                    <option value="go">Go</option>
+                    <option value="dart">Dart</option>
+                    <option value="elixir">Elixir</option>
+                    <option value="erlang">Erlang</option>
+                    <option value="haskell">Haskell</option>
+                    <option value="lua">Lua</option>
+                    <option value="perl">Perl</option>
+                    <option value="r">R</option>
+                    <option value="scala">Scala</option>
+                    <option value="sql">SQL</option>
+                    <option value="vim">Vim</option>
+                    <option value="yaml">YAML</option>
                 </select>
             {/if}
         </div>
